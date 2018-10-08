@@ -1,6 +1,5 @@
 data.appender.class=social
-# data.appender.path=test/test-append-dir
-data.appender.path=filmtrust/trust
+data.appender.path=test/test-append-dir
 rec.recommender.class=rste
 rec.iterator.learnrate=0.02
 rec.iterator.learnrate.maximum=0.02

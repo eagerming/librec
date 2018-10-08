@@ -13,11 +13,13 @@ import net.librec.similarity.RecommenderSimilarity;
 
 public class MainTest {
 
+
     public static void main(String[] args) throws Exception {
 
         // build data model
         Configuration conf = new Configuration();
-        conf.set("dfs.data.dir", "D:\\syt\\librec\\data");
+        String rootDir = System.getProperty("user.dir");
+        conf.set("dfs.data.dir", rootDir + "/data");
         TextDataModel dataModel = new TextDataModel(conf);
         dataModel.buildDataModel();
 
